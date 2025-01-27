@@ -1,0 +1,204 @@
+{
+    "provider": "azure",
+    "items": [
+        {
+            "id": "etag",
+            "change": null,
+            "remove": false,
+            "items": null
+        },
+        {
+            "id": "extendedLocation",
+            "change": null,
+            "remove": false,
+            "items": null
+        },
+        {
+            "id": "id",
+            "change": [
+                {
+                    "action": "split",
+                    "divisor": "/",
+                    "index": false,
+                    "fields": [
+                        {
+                            "id": "subscription",
+                            "index": 2,
+                            "range": 2
+                        },
+                        {
+                            "id": "resource",
+                            "index": 6,
+                            "range": false
+                        }
+                    ]
+                }
+            ],
+            "remove": true,
+            "items": null
+        },
+        {
+            "id": "identity",
+            "change": null,
+            "remove": false,
+            "items": [
+                "principalId",
+                "tenantId",
+                "type",
+                "userAssignedIdentities"
+            ]
+        },
+        {
+            "id": "kind",
+            "change": null,
+            "remove": false,
+            "items": null
+        },
+        {
+            "id": "location",
+            "change": null,
+            "remove": false,
+            "items": null
+        },
+        {
+            "id": "managedBy",
+            "change": [
+                {
+                    "action": "extract",
+                    "divisor": "/",
+                    "index": 6,
+                    "fields": [],
+                    "range": false
+                }
+            ],
+            "remove": false,
+            "items": null
+        },
+        {
+            "id": "name",
+            "change": null,
+            "remove": false,
+            "items": null
+        },
+        {
+            "id": "plan",
+            "change": null,
+            "remove": false,
+            "items": null
+        },
+        {
+            "id": "properties",
+            "change": null,
+            "remove": false,
+            "items": null
+        },
+        {
+            "id": "resourceGroup",
+            "change": null,
+            "remove": false,
+            "items": null
+        },
+        {
+            "id": "sku",
+            "change": null,
+            "remove": false,
+            "items": [
+                "capacity",
+                "family",
+                "model",
+                "name",
+                "size",
+                "tier"
+            ]
+        },
+        {
+            "id": "systemData",
+            "change": null,
+            "remove": false,
+            "items": [
+                "createdAt",
+                "createdBy",
+                "createdByType",
+                "lastModifiedAt",
+                "lastModifiedBy",
+                "lastModifiedByType"
+            ]
+        },
+        {
+            "id": "tags",
+            "change": null,
+            "remove": false,
+            "items": null
+        },
+        {
+            "id": "type",
+            "change": null,
+            "remove": false,
+            "items": null
+        },
+        {
+            "id": "zone",
+            "change": null,
+            "remove": false,
+            "items": null
+        }
+    ],
+    "export": [
+        {
+            "id": "etag",
+            "title": "E-Tag"
+        },
+        {
+            "id": "extendedLocation",
+            "title": "Extended Location"
+        },
+        {
+            "id": "id",
+            "title": "ID"
+        },
+        {
+            "id": "subscription",
+            "title": "Subscription"
+        },
+        {
+            "id": "resource",
+            "title": "Resource"
+        },
+        {
+            "id": "kind",
+            "title": "Kind"
+        },
+        {
+            "id": "location",
+            "title": "Location"
+        },
+        {
+            "id": "managedBy",
+            "title": "Managed By"
+        },
+        {
+            "id": "name",
+            "title": "Name"
+        },
+        {
+            "id": "plan",
+            "title": "Plan"
+        },
+        {
+            "id": "resourceGroup",
+            "title": "Resource Group"
+        },
+        {
+            "id": "tags",
+            "title": "Tags"
+        },
+        {
+            "id": "type",
+            "title": "Type"
+        },
+        {
+            "id": "zone",
+            "title": "Zone"
+        }
+    ]
+}
