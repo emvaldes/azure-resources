@@ -1,0 +1,80 @@
+{
+    "params": {
+      "ExportFormat": "excel",
+      "BatchSize": 10,
+      "BatchLimit": 0,
+      "CacheExpiry": 1440,
+      "MaxDepth": 20
+    },
+    "reports": {
+        "folder": "Azure-Reports",
+        "environments": [
+            {
+                "id": "demo",
+                "title": "Demonstration"
+            },
+            {
+                "id": "test",
+                "title": "Testing / Q&A"
+            },
+            {
+                "id": "staging",
+                "title": "Staging / UAT"
+            },
+            {
+                "id": "prod",
+                "title": "Production"
+            }
+        ]
+    },
+    "export": [
+        {
+          "id": "identity.principalId",
+          "title": "Identity - Principal ID"
+        },
+        {
+            "id": "identity.type",
+            "title": "Identity - Type"
+        },
+        {
+            "id": "properties.publicNetworkAccess",
+            "title": "Properties - Public Network Access"
+        },
+        {
+            "id": "properties.storageProfile.geoRedundantBackup",
+            "title": "Properties - Storage Profile - Geo Redundant Backup"
+        },
+        {
+            "id": "sku.capacity",
+            "title": "SKU - Capacity"
+        },
+        {
+            "id": "sku.family",
+            "title": "SKU - Family"
+        },
+        {
+            "id": "sku.model",
+            "title": "SKU - Model"
+        },
+        {
+            "id": "sku.name",
+            "title": "SKU - Name"
+        },
+        {
+            "id": "sku.size",
+            "title": "SKU - Size"
+        },
+        {
+            "id": "sku.tier",
+            "title": "SKU - Tier"
+        },
+        {
+            "id": "systemData.createdAt",
+            "title": "System Data - Created"
+        },
+        {
+            "id": "systemData.lastModifiedAt",
+            "title": "System Data - Modified"
+        }
+    ]
+}
